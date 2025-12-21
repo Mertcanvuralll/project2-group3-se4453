@@ -25,9 +25,7 @@ jobs:
             -p ${{ secrets.REGISTRY_PASSWORD }}
 
       - name: Build Docker image
-        run: |
-          docker build \
-            -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/${{ secrets.IMAGE_NAME }}:latest .
+        run: docker build -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/${{ secrets.IMAGE_NAME }}:latest .
 
       - name: Push Docker image to ACR
         run: |
