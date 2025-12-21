@@ -3,7 +3,7 @@ name: Build and Deploy to Azure App Service
 on:
   push:
     branches:
-      - main   # hocanın verdiği branch neyse burayı ona göre değiştir
+      - master
 
 jobs:
   build-and-deploy:
