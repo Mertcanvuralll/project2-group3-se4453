@@ -15,4 +15,3 @@ EXPOSE 3000
 EXPOSE 22
 
 CMD ["npm", "start"]
-
